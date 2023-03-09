@@ -6,12 +6,47 @@ package com.myspace.proj1;
 
 public class testDO implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public testDO() {
-    }
+	@org.kie.api.definition.type.Label(value = "EO Number")
+	private java.lang.Integer eo;
+	@org.kie.api.definition.type.Label(value = "EO Payload")
+	private java.lang.String payload;
+	@org.kie.api.definition.type.Label(value = "Status of EO")
+	private java.util.List<java.lang.String> status;
 
+	public testDO() {
+	}
 
+	public java.lang.Integer getEo() {
+		return this.eo;
+	}
 
+	public void setEo(java.lang.Integer eo) {
+		this.eo = eo;
+	}
+
+	public java.lang.String getPayload() {
+		return this.payload;
+	}
+
+	public void setPayload(java.lang.String payload) {
+		this.payload = payload;
+	}
+
+	public java.util.List<java.lang.String> getStatus() {
+		return this.status;
+	}
+
+	public void setStatus(java.util.List<java.lang.String> status) {
+		this.status = status;
+	}
+
+	public testDO(java.lang.Integer eo, java.lang.String payload,
+			java.util.List<java.lang.String> status) {
+		this.eo = eo;
+		this.payload = payload;
+		this.status = status;
+	}
 
 }
