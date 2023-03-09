@@ -15,8 +15,11 @@ public class testDO implements java.io.Serializable {
 	@org.kie.api.definition.type.Label("Status of EO")
 	private java.util.List<java.lang.String> status;
 
-	@org.kie.api.definition.type.Label(value = "field 1")
+	@org.kie.api.definition.type.Label("field 1")
 	private java.util.Date f1;
+
+	@org.kie.api.definition.type.Label(value = "F2 field")
+	private java.lang.Byte f2;
 
 	public testDO() {
 	}
@@ -53,12 +56,22 @@ public class testDO implements java.io.Serializable {
 		this.f1 = f1;
 	}
 
+	public java.lang.Byte getF2() {
+		return this.f2;
+	}
+
+	public void setF2(java.lang.Byte f2) {
+		this.f2 = f2;
+	}
+
 	public testDO(java.lang.Integer eo, java.lang.String payload,
-			java.util.List<java.lang.String> status, java.util.Date f1) {
+			java.util.List<java.lang.String> status, java.util.Date f1,
+			java.lang.Byte f2) {
 		this.eo = eo;
 		this.payload = payload;
 		this.status = status;
 		this.f1 = f1;
+		this.f2 = f2;
 	}
 
 }
