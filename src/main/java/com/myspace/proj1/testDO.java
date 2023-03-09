@@ -8,12 +8,15 @@ public class testDO implements java.io.Serializable {
 
 	static final long serialVersionUID = 1L;
 
-	@org.kie.api.definition.type.Label(value = "EO Number")
+	@org.kie.api.definition.type.Label("EO Number")
 	private java.lang.Integer eo;
-	@org.kie.api.definition.type.Label(value = "EO Payload")
+	@org.kie.api.definition.type.Label("EO Payload")
 	private java.lang.String payload;
-	@org.kie.api.definition.type.Label(value = "Status of EO")
+	@org.kie.api.definition.type.Label("Status of EO")
 	private java.util.List<java.lang.String> status;
+
+	@org.kie.api.definition.type.Label(value = "field 1")
+	private java.util.Date f1;
 
 	public testDO() {
 	}
@@ -42,11 +45,20 @@ public class testDO implements java.io.Serializable {
 		this.status = status;
 	}
 
+	public java.util.Date getF1() {
+		return this.f1;
+	}
+
+	public void setF1(java.util.Date f1) {
+		this.f1 = f1;
+	}
+
 	public testDO(java.lang.Integer eo, java.lang.String payload,
-			java.util.List<java.lang.String> status) {
+			java.util.List<java.lang.String> status, java.util.Date f1) {
 		this.eo = eo;
 		this.payload = payload;
 		this.status = status;
+		this.f1 = f1;
 	}
 
 }
