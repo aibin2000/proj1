@@ -45,11 +45,6 @@
       <version>1.4.19.redhat-00001</version>
       <scope>test</scope>
     </dependency>
-    <dependency>
-      <groupId>java</groupId>
-      <artifactId>util</artifactId>
-      <version>Arrays</version>
-    </dependency>
   </dependencies>
   <build>
     <plugins>
