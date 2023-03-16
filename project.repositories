@@ -3,6 +3,14 @@
     <repository>
       <include>true</include>
       <metadata>
+        <id>jboss-community-repository</id>
+        <url>https://repository.jboss.org/nexus/content/groups/public/</url>
+        <source>SETTINGS</source>
+      </metadata>
+    </repository>
+    <repository>
+      <include>true</include>
+      <metadata>
         <id>jboss-eap-repository</id>
         <url>file:///Users/peterai/jboss-eap-7.4.0.GA-maven-repository/maven-repository</url>
         <source>SETTINGS</source>
@@ -14,14 +22,6 @@
         <id>local</id>
         <url>/Users/peterai/.m2/repository</url>
         <source>LOCAL</source>
-      </metadata>
-    </repository>
-    <repository>
-      <include>true</include>
-      <metadata>
-        <id>jboss-community-repository</id>
-        <url>https://repository.jboss.org/nexus/content/groups/public/</url>
-        <source>SETTINGS</source>
       </metadata>
     </repository>
     <repository>
