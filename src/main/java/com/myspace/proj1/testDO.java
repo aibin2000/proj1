@@ -6,7 +6,7 @@ package com.myspace.proj1;
 
 public class testDO implements java.io.Serializable {
 
-	static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 2L;
 
 	@org.kie.api.definition.type.Label("EO Number")
 	private java.lang.Integer eo;
